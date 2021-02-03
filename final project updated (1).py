@@ -38,7 +38,7 @@ diabetes1.head()
 diabetes1.info()
 
 
-# In[8]:
+# In[8]: Splitting the dataset for training and testing
 
 
 from sklearn.model_selection import train_test_split 
@@ -71,7 +71,7 @@ print ("Testing True: {0} ({1:0.2f}%)".format(len(y_test[y_test[:] == 1]),(len(y
 print ("Testing False: {0} ({1:0.2f}%)".format(len(y_test[y_test[:] == 0]),(len(y_test[y_test[:] == 0]) / len(y_test))*100.0))
 
 
-# In[11]:
+# In[11]:K-means algorithm 
 
 
 from sklearn.cluster import KMeans
@@ -104,7 +104,7 @@ accuracy = accuracy_score(y_test, kpred)*100
 print(accuracy)
 
 
-# In[15]:
+# In[15]:confusion matrix 
 
 
 #confusion matrix
